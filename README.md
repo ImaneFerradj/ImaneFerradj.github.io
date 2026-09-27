@@ -35,3 +35,12 @@ All figures are illustrations taken from the thesis manuscript (no results or ex
 - inspection pipeline (scanning to lesion detection)
 - robot cross-section
 - straight and helical actuator routing
+
+## Languages
+
+The site can be read in English, French, Arabic and Japanese using the menu in the top bar.
+All translations are in `assets/i18n.js`. Each translated element in the HTML has a
+`data-i18n="tXXX"` key; to change a sentence, edit the matching key in each language.
+Arabic switches the layout to right-to-left automatically. A link can open a given language
+directly by adding `?lang=fr`, `?lang=ar` or `?lang=ja` to the address.
+Paper titles, author lists and venues stay in English.
