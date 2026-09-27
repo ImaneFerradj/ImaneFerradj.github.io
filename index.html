@@ -12,7 +12,7 @@
 <title>Imane Ferradj — Continuum Robotics</title>
 <meta property="og:title" content="Imane Ferradj — Continuum Robotics">
 <meta property="og:description" content="Modeling, control, and optimization of electroactive actuators for continuum robotics.">
-<meta property="og:image" content="https://imaneferradj.github.io/assets/telecystoscopy-procedure.png">
+<meta property="og:image" content="https://imaneferradj.github.io/assets/clinical-concept.jpg">
 <meta property="og:url" content="https://imaneferradj.github.io/">
 </head>
 <body id="top">
@@ -48,10 +48,10 @@
       </div>
     </div>
     <div class="hero-visual reveal">
-      <div class="figure-card feature-card">
-        <img src="assets/telecystoscopy-procedure.png" alt="Illustration of the robot entering the bladder through the urethra, with a steerable blue tip">
-      </div>
-      <p class="figure-note">The idea: a passive shaft goes in through the urethra, and a short steerable tip does the looking around inside the bladder.</p>
+      <figure class="portrait">
+        <img src="assets/imane-ferradj-hero.png" alt="Portrait of Imane Ferradj"
+             onerror="this.onerror=null;this.src='assets/clinical-concept.jpg';this.parentElement.classList.add('portrait-fallback')">
+      </figure>
     </div>
   </section>
 
@@ -69,24 +69,28 @@
   <section class="section steps">
     <div class="step-grid">
       <article class="step-card reveal">
+        <div class="step-figure"><img src="assets/strain-to-bending.png" alt="A free film only stretches, while a film bonded to a passive layer curves"></div>
         <p class="card-label">1 · The material</p>
-        <h3>How the polymer behaves.</h3>
-        <p>I measured how these polymers respond to an electric field, and how their composition changes that response. This gave me the parameters for every model that came after.</p>
+        <h3>How a thin film bends.</h3>
+        <p>An electroactive film stretches when a voltage is applied. Bond it to a passive layer and it curves instead. I measured how these polymers respond, which gave me the parameters for every model that came after.</p>
       </article>
       <article class="step-card reveal">
+        <div class="step-figure"><img src="assets/multilayer-actuator.png" alt="Stack of polymer and electrode layers on a substrate, and the resulting bent actuator"></div>
         <p class="card-label">2 · The actuator</p>
-        <h3>One actuator, three sections.</h3>
-        <p>I designed a printed actuator split into three sections that can be driven separately, so the whole structure can be shaped instead of bent in a single arc.</p>
+        <h3>From film to actuator.</h3>
+        <p>Stacking several active layers on a substrate gives more bending for the same voltage. I model these stacks to predict how far the actuator will bend and to choose its layers.</p>
       </article>
       <article class="step-card reveal">
+        <div class="step-figure"><img src="assets/three-section-layout.png" alt="Electrode layout of an actuator split into three sections"></div>
         <p class="card-label">3 · Control</p>
         <h3>Making it bend where I want.</h3>
-        <p>These materials have hysteresis: the same voltage doesn't always give the same bend. I work on compensating for it, and on control methods that scale to robots with many sections.</p>
+        <p>Splitting the actuator into sections that are driven separately lets you shape it, not just bend it. I work on hysteresis compensation and on control methods that scale to many sections.</p>
       </article>
       <article class="step-card reveal">
+        <div class="step-figure"><img src="assets/wall-inspection.jpg" alt="The robot's bent tip pointing its camera at the bladder wall"></div>
         <p class="card-label">4 · The robot</p>
         <h3>Designing the robot's tip.</h3>
-        <p>All of this feeds into the design of a small steerable tip for bladder inspection, sized and laid out to reach and see as much of the bladder as possible.</p>
+        <p>All of this feeds into the design of a small steerable tip that can point its camera at as much of the bladder wall as possible.</p>
       </article>
     </div>
   </section>
@@ -94,19 +98,19 @@
   <section class="section thesis-focus">
     <div class="two-col-panel reveal">
       <div>
-        <p class="eyebrow">The design</p>
-        <h2>What it looks like.</h2>
+        <p class="eyebrow">The goal</p>
+        <h2>What the robot is for.</h2>
         <p>
-          The actuator is printed in three sections that can be driven separately. The robot's tip is a small tube carrying a camera,
-          LEDs and air channels, with the actuators laid along it either straight or wrapped in a helix.
+          A passive shaft goes in through the urethra, and a short steerable tip looks around inside the bladder.
+          As it scans, the video can be stitched into a 3D map of the bladder wall, which helps doctors find and document lesions.
+        </p>
+        <p>
+          The tip carries a camera, LEDs and air channels, with the actuators laid along it either straight or wrapped in a helix.
         </p>
       </div>
       <div class="figure-stack">
-        <div class="figure-card mini"><img src="assets/three-section-actuator.png" alt="Layout of the three-section printed actuator"></div>
-        <div class="figure-pair">
-          <div class="figure-card mini"><img src="assets/robot-cross-section.png" alt="Cross-section of the robot tip with camera, LEDs, air channels and actuators"></div>
-          <div class="figure-card mini"><img src="assets/routing-architectures.png" alt="Actuators laid straight along the tube or wrapped in a helix"></div>
-        </div>
+        <div class="figure-card mini"><img src="assets/clinical-concept.jpg" alt="The robot entering the bladder through the urethra, with a steerable blue tip"></div>
+        <div class="figure-card mini"><img src="assets/inspection-pipeline.jpg" alt="From robot scanning to video, 3D reconstruction and lesion detection"></div>
       </div>
     </div>
   </section>
