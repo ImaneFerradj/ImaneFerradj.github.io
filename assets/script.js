@@ -1,17 +1,22 @@
-
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
 
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav-links");
-
 if (toggle && nav) {
   toggle.addEventListener("click", () => {
     const open = nav.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(open));
   });
+  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+  }));
 }
 
+if (!("IntersectionObserver" in window)) {
+  document.querySelectorAll(".reveal").forEach(el => el.classList.add("visible"));
+} else {
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -19,12 +24,13 @@ const observer = new IntersectionObserver(entries => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: .12, rootMargin: "0px 0px -35px 0px" });
+}, { threshold: 0.12, rootMargin: "0px 0px -35px 0px" });
 
 document.querySelectorAll(".reveal").forEach((el, i) => {
   el.style.transitionDelay = `${Math.min(i % 3, 2) * 65}ms`;
   observer.observe(el);
 });
+}
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", e => {
