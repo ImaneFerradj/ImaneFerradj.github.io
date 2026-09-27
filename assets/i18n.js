@@ -523,6 +523,9 @@
           if (u.searchParams.has("lang")) { u.searchParams.set("lang", s.value); history.replaceState(null, "", u); }
         } catch (e) {}
         apply(s.value);
+        if (window.umami && typeof window.umami.track === "function") {
+          window.umami.track("language-change", { language: s.value });
+        }
       });
     });
   }
