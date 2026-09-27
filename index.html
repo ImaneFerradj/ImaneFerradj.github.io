@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#edf7fc">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27%231786ca%27/%3E%3Ctext x=%2732%27 y=%2743%27 font-family=%27Helvetica,Arial,sans-serif%27 font-size=%2730%27 font-weight=%27700%27 fill=%27white%27 text-anchor=%27middle%27%3EIF%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Imane Ferradj — modeling, control, and optimization of electroactive actuators for continuum robotics.">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/script.js"></script>
+<title>Imane Ferradj — Continuum Robotics</title>
+<meta property="og:title" content="Imane Ferradj — Continuum Robotics">
+<meta property="og:description" content="Modeling, control, and optimization of electroactive actuators for continuum robotics.">
+<meta property="og:image" content="https://imaneferradj.github.io/assets/telecystoscopy-procedure.png">
+<meta property="og:url" content="https://imaneferradj.github.io/">
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand page-link" href="index.html">Imane Ferradj</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a class="page-link" href="index.html">Home</a>
+      <a class="page-link" href="resume.html">Detailed Profile</a>
+      <a class="page-link" href="publications.html">Publications</a>
+      <a href="https://www.researchgate.net/profile/Imane-Ferradj?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate ↗</a>
+      <a href="mailto:imane.ferradj@ensam.eu">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero split-hero">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">PhD candidate in robotics, Arts et Métiers, Paris</p>
+      <h1>Soft, steerable robots<br><span>for bladder inspection.</span></h1>
+      <p class="hero-intro">
+        I'm <strong>Imane Ferradj</strong>. I work with electroactive polymers, thin films that bend when you apply a voltage.
+        My PhD is about understanding these actuators, controlling them, and using them to steer a miniature continuum robot
+        for telecystoscopy.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary page-link" href="resume.html">Detailed profile</a>
+        <a class="button secondary page-link" href="publications.html">Publications</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="figure-card feature-card">
+        <img src="assets/telecystoscopy-procedure.png" alt="Illustration of the robot entering the bladder through the urethra, with a steerable blue tip">
+      </div>
+      <p class="figure-note">The idea: a passive shaft goes in through the urethra, and a short steerable tip does the looking around inside the bladder.</p>
+    </div>
+  </section>
+
+  <section class="section intro-block tight-bottom">
+    <div class="center-heading reveal">
+      <p class="eyebrow">The research</p>
+      <h2>From the material to the robot.</h2>
+      <p>
+        I started with the material itself, measuring how it responds to an electric field.
+        From there I modeled the actuators, learned to control how they bend, and used all of it to design the tip of a small robot for bladder inspection.
+      </p>
+    </div>
+  </section>
+
+  <section class="section steps">
+    <div class="step-grid">
+      <article class="step-card reveal">
+        <p class="card-label">1 · The material</p>
+        <h3>How the polymer behaves.</h3>
+        <p>I measured how these polymers respond to an electric field, and how their composition changes that response. This gave me the parameters for every model that came after.</p>
+      </article>
+      <article class="step-card reveal">
+        <p class="card-label">2 · The actuator</p>
+        <h3>One actuator, three sections.</h3>
+        <p>I designed a printed actuator split into three sections that can be driven separately, so the whole structure can be shaped instead of bent in a single arc.</p>
+      </article>
+      <article class="step-card reveal">
+        <p class="card-label">3 · Control</p>
+        <h3>Making it bend where I want.</h3>
+        <p>These materials have hysteresis: the same voltage doesn't always give the same bend. I work on compensating for it, and on control methods that scale to robots with many sections.</p>
+      </article>
+      <article class="step-card reveal">
+        <p class="card-label">4 · The robot</p>
+        <h3>Designing the robot's tip.</h3>
+        <p>All of this feeds into the design of a small steerable tip for bladder inspection, sized and laid out to reach and see as much of the bladder as possible.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section thesis-focus">
+    <div class="two-col-panel reveal">
+      <div>
+        <p class="eyebrow">The design</p>
+        <h2>What it looks like.</h2>
+        <p>
+          The actuator is printed in three sections that can be driven separately. The robot's tip is a small tube carrying a camera,
+          LEDs and air channels, with the actuators laid along it either straight or wrapped in a helix.
+        </p>
+      </div>
+      <div class="figure-stack">
+        <div class="figure-card mini"><img src="assets/three-section-actuator.png" alt="Layout of the three-section printed actuator"></div>
+        <div class="figure-pair">
+          <div class="figure-card mini"><img src="assets/robot-cross-section.png" alt="Cross-section of the robot tip with camera, LEDs, air channels and actuators"></div>
+          <div class="figure-card mini"><img src="assets/routing-architectures.png" alt="Actuators laid straight along the tube or wrapped in a helix"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pathway">
+    <div class="center-heading reveal">
+      <p class="eyebrow">More</p>
+      <h2>Profile and papers.</h2>
+      <p>
+        My background, teaching and skills are on the profile page. My papers have a page of their own.
+      </p>
+    </div>
+
+    <div class="link-cards">
+      <a class="link-card page-link reveal" href="resume.html">
+        <span>01</span>
+        <div>
+          <h3>Detailed Profile</h3>
+          <p>Where I've studied and worked, what I teach, and the tools I use.</p>
+        </div>
+        <strong>→</strong>
+      </a>
+      <a class="link-card page-link reveal" href="publications.html">
+        <span>02</span>
+        <div>
+          <h3>Publications</h3>
+          <p>Conference papers and journal articles under review.</p>
+        </div>
+        <strong>→</strong>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>© <span id="year"></span> Imane Ferradj</span>
+  <span>Continuum Robotics · Smart Materials · Paris</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+</body>
+</html>
