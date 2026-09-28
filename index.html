@@ -8,17 +8,25 @@
 <script>(function(){var d=document.documentElement,l=null;d.classList.add("js");try{l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("lang")}catch(e){}if(l==="fr"||l==="ar"||l==="ja"){d.lang=l;if(l==="ar")d.dir="rtl";d.classList.add("i18n-pending");setTimeout(function(){d.classList.remove("i18n-pending")},1500)}})();</script>
 <link href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27%231786ca%27/%3E%3Ctext x=%2732%27 y=%2743%27 font-family=%27Helvetica,Arial,sans-serif%27 font-size=%2730%27 font-weight=%27700%27 fill=%27white%27 text-anchor=%27middle%27%3EIF%3C/text%3E%3C/svg%3E" rel="icon"/>
 <meta content="Imane Ferradj — modeling, control, and optimization of electroactive actuators for continuum robotics." name="description"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link crossorigin="" rel="preconnect" href="https://fonts.gstatic.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=Noto+Naskh+Arabic:wght@500;600&amp;family=Noto+Serif+JP:wght@500;600&amp;display=swap" rel="stylesheet"/>
 <link href="assets/styles.css" rel="stylesheet"/>
 <script src="assets/analytics.js"></script>
 <script defer="" src="assets/i18n.js"></script>
 <script defer="" src="assets/script.js"></script>
+<script defer="" src="assets/steer.js"></script>
 <title data-i18n="t114">Imane Ferradj — Continuum Robotics</title>
 <meta content="Imane Ferradj — Continuum Robotics" property="og:title"/>
 <meta content="Modeling, control, and optimization of electroactive actuators for continuum robotics." property="og:description"/>
 <meta content="https://imaneferradj.github.io/assets/clinical-concept.jpg" property="og:image"/>
 <meta content="https://imaneferradj.github.io/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://imaneferradj.github.io/" rel="canonical"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Imane Ferradj","url":"https://imaneferradj.github.io/","jobTitle":"PhD candidate in robotics","affiliation":{"@type":"Organization","name":"Arts et Métiers, PIMM Laboratory","address":"Paris, France"},"email":"mailto:imane.ferradj@ensam.eu","knowsAbout":["Continuum robotics","Soft robotics","Electroactive polymers","Hysteresis compensation","Model predictive control","Medical robotics"],"knowsLanguage":["ar","fr","en","ja"],"sameAs":["https://www.researchgate.net/profile/Imane-Ferradj"]}</script>
 </head>
 <body id="top">
+<a class="skip-link" data-i18n="t137" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="nav-inner">
 <a class="brand page-link" href="index.html">Imane Ferradj</a>
@@ -42,7 +50,7 @@
 </nav>
 </div>
 </header>
-<main>
+<main id="main">
 <section class="hero split-hero">
 <div class="hero-copy reveal">
 <p class="eyebrow" data-i18n="t005">PhD candidate in robotics, Arts et Métiers, Paris</p>
@@ -59,92 +67,100 @@
 </div>
 <div class="hero-visual reveal">
 <figure class="portrait">
-<img alt="Portrait of Imane Ferradj" data-i18n-alt="t035" onerror="this.onerror=null;this.src='assets/clinical-concept.jpg';this.parentElement.classList.add('portrait-fallback')" src="assets/imane-ferradj-hero.png"/>
+<picture>
+<source srcset="assets/imane-ferradj-hero.webp" type="image/webp"/>
+<img alt="Portrait of Imane Ferradj" data-i18n-alt="t035" fetchpriority="high" height="1194" onerror="this.onerror=null;this.src='assets/imane-ferradj-hero.png'" src="assets/imane-ferradj-hero.jpg" width="823"/>
+</picture>
 </figure>
 </div>
 </section>
-<section class="section intro-block tight-bottom">
-<div class="center-heading reveal">
-<p class="eyebrow" data-i18n="t009">The research</p>
-<h2 data-i18n="t010">From the material to the robot.</h2>
-<p data-i18n="t011">
-        I started with the material itself, measuring how it responds to an electric field.
-        From there I modeled the actuators, learned to control how they bend, and used all of it to design the tip of a small robot for bladder inspection.
-      </p>
+<section aria-labelledby="steer-title" class="steer" id="steer">
+<div class="steer-inner">
+<div class="steer-copy">
+<h2 data-i18n="t119" id="steer-title">Steer the tip yourself.</h2>
+<p data-i18n="t120">Each section of the tip is a strip of electroactive film. Give a section some voltage and it curves; combine three and the camera can look almost anywhere. The wall turns blue wherever the camera has already looked.</p>
+<div class="steer-controls">
+<label class="steer-row"><span data-i18n="t121">Insertion</span><input dir="ltr" max="100" min="0" name="ins" type="range" value="45"/></label>
+<label class="steer-row"><span data-i18n="t122">Section 1</span><input dir="ltr" max="100" min="-100" name="s1" type="range" value="75"/></label>
+<label class="steer-row"><span data-i18n="t123">Section 2</span><input dir="ltr" max="100" min="-100" name="s2" type="range" value="-85"/></label>
+<label class="steer-row"><span data-i18n="t124">Section 3</span><input dir="ltr" max="100" min="-100" name="s3" type="range" value="95"/></label>
+</div>
+<div class="steer-bar">
+<p aria-live="polite" class="steer-score"><span class="num" dir="ltr"><b>0</b><span class="pct">%</span></span> <span data-i18n="t128">of the wall seen</span></p>
+<div class="steer-buttons">
+<button aria-pressed="false" class="button primary steer-scan" type="button"><span class="when-idle" data-i18n="t125">Scan for me</span><span class="when-busy" data-i18n="t126">Stop</span></button>
+<button class="button secondary steer-clear" type="button" data-i18n="t127">Clear the wall</button>
+</div>
+</div>
+<p class="steer-note" data-i18n="t129">A sketch, not a model of the real robot: here the tip moves in a plane, and each section's curvature grows with the square of its voltage, as it does for electrostrictive polymers.</p>
+</div>
+<figure class="steer-stage">
+<svg aria-label="The robot's tip inside the bladder. A cone shows what the camera sees, and the parts of the wall it has already seen are highlighted." class="steer-svg" data-i18n-alt="t130" role="img" viewBox="40 40 520 560"></svg>
+</figure>
 </div>
 </section>
-<section class="section steps">
-<div class="step-grid">
-<article class="step-card reveal">
-<div class="step-figure"><img alt="A free film only stretches, while a film bonded to a passive layer curves" data-i18n-alt="t036" src="assets/strain-to-bending.png"/></div>
-<p class="card-label" data-i18n="t012">1 · The material</p>
-<h3 data-i18n="t013">How a thin film bends.</h3>
-<p data-i18n="t014">An electroactive film stretches when a voltage is applied. Bond it to a passive layer and it curves instead. I measured how these polymers respond, which gave me the parameters for every model that came after.</p>
-</article>
-<article class="step-card reveal">
-<div class="step-figure"><img alt="Stack of polymer and electrode layers on a substrate, and the resulting bent actuator" data-i18n-alt="t037" src="assets/multilayer-actuator.png"/></div>
-<p class="card-label" data-i18n="t015">2 · The actuator</p>
-<h3 data-i18n="t016">From film to actuator.</h3>
-<p data-i18n="t017">Stacking several active layers on a substrate gives more bending for the same voltage. I model these stacks to predict how far the actuator will bend and to choose its layers.</p>
-</article>
-<article class="step-card reveal">
-<div class="step-figure"><img alt="Electrode layout of an actuator split into three sections" data-i18n-alt="t038" src="assets/three-section-layout.png"/></div>
-<p class="card-label" data-i18n="t018">3 · Control</p>
-<h3 data-i18n="t019">Making it bend where I want.</h3>
-<p data-i18n="t020">Splitting the actuator into sections that are driven separately lets you shape it, not just bend it. I work on hysteresis compensation and on control methods that scale to many sections.</p>
-</article>
-<article class="step-card reveal">
-<div class="step-figure"><img alt="The robot's bent tip pointing its camera at the bladder wall" data-i18n-alt="t039" src="assets/wall-inspection.jpg"/></div>
-<p class="card-label" data-i18n="t021">4 · The robot</p>
-<h3 data-i18n="t022">Designing the robot's tip.</h3>
-<p data-i18n="t023">All of this feeds into the design of a small steerable tip that can point its camera at as much of the bladder wall as possible.</p>
-</article>
+
+<section aria-labelledby="path-title" class="section path">
+<header class="section-head">
+<h2 data-i18n="t010" id="path-title">From the material to the robot.</h2>
+<p data-i18n="t011">I started with the material itself, measuring how it responds to an electric field. From there I modeled the actuators, learned to control how they bend, and used all of it to design the tip of a small robot for bladder inspection.</p>
+</header>
+<ol class="spine">
+<li class="spine-step">
+<span aria-hidden="true" class="spine-num">1</span>
+<div class="spine-text"><h3 data-i18n="t013">How a thin film bends.</h3><p data-i18n="t014">An electroactive film stretches when a voltage is applied. Bond it to a passive layer and it curves instead. I measured how these polymers respond, which gave me the parameters for every model that came after.</p></div>
+<figure class="plate"><img alt="A free film only stretches, while a film bonded to a passive layer curves" data-i18n-alt="t036" height="502" loading="lazy" src="assets/strain-to-bending.png" width="1200"/></figure>
+</li>
+<li class="spine-step">
+<span aria-hidden="true" class="spine-num">2</span>
+<div class="spine-text"><h3 data-i18n="t016">From film to actuator.</h3><p data-i18n="t017">Stacking several active layers on a substrate gives more bending for the same voltage. I model these stacks to predict how far the actuator will bend and to choose its layers.</p></div>
+<figure class="plate"><img alt="Stack of polymer and electrode layers on a substrate, and the resulting bent actuator" data-i18n-alt="t037" height="502" loading="lazy" src="assets/multilayer-actuator.png" width="1222"/></figure>
+</li>
+<li class="spine-step">
+<span aria-hidden="true" class="spine-num">3</span>
+<div class="spine-text"><h3 data-i18n="t019">Making it bend where I want.</h3><p data-i18n="t020">Splitting the actuator into sections that are driven separately lets you shape it, not just bend it. I work on hysteresis compensation and on control methods that scale to many sections.</p></div>
+<figure class="plate"><img alt="Electrode layout of an actuator split into three sections" data-i18n-alt="t038" height="472" loading="lazy" src="assets/three-section-layout.png" width="1228"/></figure>
+</li>
+<li class="spine-step">
+<span aria-hidden="true" class="spine-num">4</span>
+<div class="spine-text"><h3 data-i18n="t022">Designing the robot's tip.</h3><p data-i18n="t023">All of this feeds into the design of a small steerable tip that can point its camera at as much of the bladder wall as possible.</p></div>
+<figure class="plate"><img alt="The robot's bent tip pointing its camera at the bladder wall" data-i18n-alt="t039" height="1058" loading="lazy" src="assets/wall-inspection.jpg" width="1200"/></figure>
+</li>
+</ol>
+</section>
+
+<section aria-labelledby="goal-title" class="section goal">
+<div class="goal-grid">
+<div class="goal-copy">
+<h2 data-i18n="t025" id="goal-title">What the robot is for.</h2>
+<p data-i18n="t026">A passive shaft goes in through the urethra, and a short steerable tip looks around inside the bladder. As it scans, the video can be stitched into a 3D map of the bladder wall, which helps doctors find and document lesions.</p>
+<figure class="plate plate-small"><img alt="Robot cross-section" data-i18n-alt="t104" height="302" loading="lazy" src="assets/robot-cross-section.png" width="540"/></figure>
+<p data-i18n="t027">The tip carries a camera, LEDs and air channels, with the actuators laid along it either straight or wrapped in a helix.</p>
+</div>
+<figure class="plate plate-tall"><img alt="The robot entering the bladder through the urethra, with a steerable blue tip" data-i18n-alt="t040" height="1121" loading="lazy" src="assets/clinical-concept.jpg" width="1400"/></figure>
+</div>
+<figure class="plate plate-wide"><img alt="From robot scanning to video, 3D reconstruction and lesion detection" data-i18n-alt="t041" height="361" loading="lazy" src="assets/inspection-pipeline.jpg" width="1409"/></figure>
+</section>
+
+<section aria-labelledby="papers-title" class="section papers">
+<div class="papers-grid">
+<header class="papers-head">
+<h2 data-i18n="t131" id="papers-title">Recent papers.</h2>
+<p class="papers-links"><a class="page-link" data-i18n="t132" href="publications.html">All publications</a><a class="page-link" data-i18n="t008" href="resume.html">Detailed profile</a></p>
+</header>
+<ul class="paper-list">
+<li><span class="paper-year">2026</span><div><h3>Hysteresis-Compensated Curvature Control of Relaxor EAP Actuators for Mini-Invasive Surgery</h3><p>23rd IFAC World Congress, Busan</p></div></li>
+<li><span class="paper-year">2026</span><div><h3>Polarization-Based vs. Vision-Based Hysteresis Compensation for Curvature Control of Electroactive Polymer Actuators</h3><p>SAGIP</p></div></li>
+<li><span class="paper-year">2025</span><div><h3>Multiphysics Model and Hysteresis Compensation for Control of Electroactive Actuators</h3><p>IEEE/RSJ IROS, Hangzhou</p></div></li>
+</ul>
 </div>
 </section>
-<section class="section thesis-focus">
-<div class="two-col-panel reveal">
-<div>
-<p class="eyebrow" data-i18n="t024">The goal</p>
-<h2 data-i18n="t025">What the robot is for.</h2>
-<p data-i18n="t026">
-          A passive shaft goes in through the urethra, and a short steerable tip looks around inside the bladder.
-          As it scans, the video can be stitched into a 3D map of the bladder wall, which helps doctors find and document lesions.
-        </p>
-<p data-i18n="t027">
-          The tip carries a camera, LEDs and air channels, with the actuators laid along it either straight or wrapped in a helix.
-        </p>
-</div>
-<div class="figure-stack">
-<div class="figure-card mini"><img alt="The robot entering the bladder through the urethra, with a steerable blue tip" data-i18n-alt="t040" src="assets/clinical-concept.jpg"/></div>
-<div class="figure-card mini"><img alt="From robot scanning to video, 3D reconstruction and lesion detection" data-i18n-alt="t041" src="assets/inspection-pipeline.jpg"/></div>
-</div>
-</div>
-</section>
-<section class="section pathway">
-<div class="center-heading reveal">
-<p class="eyebrow" data-i18n="t028">More</p>
-<h2 data-i18n="t029">Profile and papers.</h2>
-<p data-i18n="t030">
-        My background, teaching and skills are on the profile page. My papers have a page of their own.
-      </p>
-</div>
-<div class="link-cards">
-<a class="link-card page-link reveal" href="resume.html">
-<span>01</span>
-<div>
-<h3 data-i18n="t002">Detailed Profile</h3>
-<p data-i18n="t031">Where I've studied and worked, what I teach, and the tools I use.</p>
-</div>
-<strong>→</strong>
-</a>
-<a class="link-card page-link reveal" href="publications.html">
-<span>02</span>
-<div>
-<h3 data-i18n="t003">Publications</h3>
-<p data-i18n="t032">Conference papers and journal articles under review.</p>
-</div>
-<strong>→</strong>
-</a>
+
+<section aria-labelledby="next-title" class="next">
+<div class="next-inner">
+<h2 data-i18n="t133" id="next-title">Next: a postdoc.</h2>
+<p data-i18n="t134">I defend my PhD in November 2026 and I'm looking for a postdoc. If you work on soft or continuum robots, I'd love to hear from you.</p>
+<a class="next-mail" href="mailto:imane.ferradj@ensam.eu">imane.ferradj@ensam.eu</a>
 </div>
 </section>
 </main>
