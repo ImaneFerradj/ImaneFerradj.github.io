@@ -138,7 +138,13 @@
   "t133": "Let's exchange ideas.",
   "t134": "I'm always happy to talk about soft and continuum robotics: smart materials, modeling, control, or a new idea you'd like to explore. Feel free to write to me.",
   "t137": "Skip to content",
-  "t138": "The procedure"
+  "t138": "The procedure",
+  "t139": "The material",
+  "t140": "The actuator",
+  "t141": "Control",
+  "t142": "The robot",
+  "t143": "Next step",
+  "t144": "Start again"
  },
  "fr": {
   "t001": "Accueil",
@@ -276,7 +282,13 @@
   "t133": "Échangeons des idées.",
   "t134": "Je suis toujours ravie d'échanger autour de la robotique souple et continue : matériaux intelligents, modélisation, commande, ou une idée nouvelle que vous aimeriez explorer. N'hésitez pas à m'écrire.",
   "t137": "Aller au contenu",
-  "t138": "La procédure"
+  "t138": "La procédure",
+  "t139": "Le matériau",
+  "t140": "L'actionneur",
+  "t141": "La commande",
+  "t142": "Le robot",
+  "t143": "Étape suivante",
+  "t144": "Recommencer"
  },
  "ar": {
   "t001": "الرئيسية",
@@ -414,7 +426,13 @@
   "t133": "لنتبادل الأفكار.",
   "t134": "يسعدني دائمًا الحديث عن الروبوتات المرنة والمستمرة: المواد الذكية، والنمذجة، والتحكم، أو أي فكرة جديدة تودّون استكشافها. لا تتردّدوا في مراسلتي.",
   "t137": "انتقل إلى المحتوى",
-  "t138": "الإجراء"
+  "t138": "الإجراء",
+  "t139": "المادة",
+  "t140": "المشغّل",
+  "t141": "التحكم",
+  "t142": "الروبوت",
+  "t143": "الخطوة التالية",
+  "t144": "من البداية"
  },
  "ja": {
   "t001": "ホーム",
@@ -552,7 +570,13 @@
   "t133": "アイデアを交換しましょう。",
   "t134": "ソフトロボットや連続体ロボットについて、いつでも喜んでお話しします。スマート材料、モデル化、制御、あるいは探ってみたい新しいアイデアなど、お気軽にご連絡ください。",
   "t137": "本文へ移動",
-  "t138": "手技の流れ"
+  "t138": "手技の流れ",
+  "t139": "材料",
+  "t140": "アクチュエータ",
+  "t141": "制御",
+  "t142": "ロボット",
+  "t143": "次へ",
+  "t144": "最初から"
  }
 };
   var LANGS = ["en", "fr", "ar", "ja"];
