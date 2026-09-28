@@ -74,10 +74,43 @@
 </figure>
 </div>
 </section>
-<section aria-labelledby="steer-title" class="steer" id="steer">
-<div class="steer-inner">
+<section aria-labelledby="path-title" class="section path">
+<header class="section-head split-head">
+<h2 data-i18n="t010" id="path-title">From the material to the robot.</h2>
+<p data-i18n="t011">I started with the material itself, measuring how it responds to an electric field. From there I modeled the actuators, learned to control how they bend, and used all of it to design the tip of a small robot for bladder inspection.</p>
+</header>
+<ol class="steps">
+<li class="step">
+<div class="step-art"><svg aria-hidden="true" class="glyph" viewBox="0 0 140 92"><rect class="g-clamp" x="14.0" y="41.0" width="8" height="22" rx="2"/><path class="g-passive" d="M22.0 54.2 L26.4 54.1 L30.8 54.0 L35.2 53.7 L39.5 53.3 L43.9 52.8 L48.2 52.1 L52.6 51.4 L56.9 50.6 L61.2 49.6 L65.4 48.5 L69.6 47.3 L73.8 46.0 L78.0 44.6 L82.1 43.1 L86.2 41.5 L90.2 39.8 L94.2 38.0 L98.2 36.0 L102.1 34.0 L105.9 31.9 L109.7 29.6 L113.4 27.3 L117.1 24.9 L120.6 22.4"/><path class="g-active" d="M22.0 50.8 L26.3 50.7 L30.6 50.6 L34.9 50.3 L39.2 49.9 L43.5 49.4 L47.7 48.8 L51.9 48.1 L56.2 47.2 L60.4 46.3 L64.5 45.2 L68.7 44.1 L72.8 42.8 L76.9 41.4 L80.9 40.0 L84.9 38.4 L88.9 36.7 L92.8 34.9 L96.6 33.0 L100.5 31.0 L104.2 28.9 L107.9 26.7 L111.6 24.5 L115.2 22.1 L118.7 19.6"/></svg></div><span class="step-num">1</span>
+<h3 data-i18n="t013">How a thin film bends.</h3>
+<p data-i18n="t014">An electroactive film stretches when a voltage is applied. Bond it to a passive layer and it curves instead. I measured how these polymers respond, which gave me the parameters for every model that came after.</p>
+</li>
+<li class="step">
+<div class="step-art"><svg aria-hidden="true" class="glyph" viewBox="0 0 140 92"><rect class="g-clamp" x="14.0" y="48.0" width="8" height="28" rx="2"/><path class="g-passive" d="M22.1 66.5 L26.6 66.4 L31.2 66.0 L35.7 65.3 L40.2 64.4 L44.6 63.3 L49.0 61.9 L53.3 60.3 L57.5 58.4 L61.5 56.3 L65.5 53.9 L69.3 51.4 L72.9 48.6 L76.4 45.6 L79.8 42.5 L82.9 39.1 L85.8 35.6 L88.6 31.9 L91.1 28.1 L93.4 24.1 L95.5 20.1 L97.4 15.9 L99.0 11.6 L100.4 7.2 L101.5 2.9"/><path class="g-active g-layer" d="M22.0 63.2 L26.4 63.1 L30.8 62.7 L35.1 62.1 L39.5 61.2 L43.7 60.1 L47.9 58.8 L52.0 57.2 L56.0 55.4 L59.9 53.4 L63.7 51.1 L67.4 48.7 L70.9 46.0 L74.2 43.2 L77.4 40.1 L80.4 36.9 L83.3 33.6 L85.9 30.0 L88.3 26.4 L90.5 22.6 L92.5 18.6 L94.3 14.6 L95.9 10.5 L97.2 6.3 L98.3 2.1"/><path class="g-active g-layer" d="M21.9 59.8 L26.2 59.7 L30.4 59.3 L34.6 58.7 L38.7 57.9 L42.8 56.9 L46.8 55.6 L50.7 54.1 L54.5 52.3 L58.3 50.4 L61.9 48.3 L65.4 45.9 L68.8 43.4 L72.0 40.6 L75.0 37.7 L77.9 34.7 L80.6 31.4 L83.1 28.1 L85.4 24.6 L87.6 20.9 L89.5 17.2 L91.2 13.3 L92.7 9.4 L93.9 5.4 L95.0 1.2"/><path class="g-active g-layer" d="M21.8 56.4 L26.0 56.3 L30.0 55.9 L34.0 55.4 L37.9 54.6 L41.8 53.6 L45.7 52.4 L49.4 50.9 L53.1 49.3 L56.6 47.4 L60.1 45.4 L63.4 43.1 L66.6 40.7 L69.7 38.1 L72.6 35.3 L75.3 32.4 L77.9 29.3 L80.3 26.1 L82.5 22.8 L84.6 19.3 L86.4 15.7 L88.0 12.0 L89.4 8.3 L90.6 4.5 L91.7 0.4"/></svg></div><span class="step-num">2</span>
+<h3 data-i18n="t016">From film to actuator.</h3>
+<p data-i18n="t017">Stacking several active layers on a substrate gives more bending for the same voltage. I model these stacks to predict how far the actuator will bend and to choose its layers.</p>
+</li>
+<li class="step">
+<div class="step-art"><svg aria-hidden="true" class="glyph" viewBox="0 0 140 92"><rect class="g-clamp" x="14.0" y="37.0" width="8" height="22" rx="2"/><path class="g-body" d="M22.0 48.0 L23.6 48.0 L25.2 47.8 L26.7 47.6 L28.3 47.3 L29.8 46.9 L31.3 46.5 L32.8 45.9 L34.3 45.3 L35.7 44.6 L37.1 43.8 L38.4 43.0 L39.7 42.1 L40.9 41.1 L42.1 40.0 L43.3 38.9 L44.3 37.7 L45.3 36.5 L46.2 35.2 L47.1 33.9 L47.9 32.5 L48.6 31.1 L49.2 29.7 L49.8 28.2 L50.3 26.7 L50.8 25.2 L51.4 23.7 L52.1 22.3 L52.9 21.0 L53.9 19.7 L54.9 18.5 L56.1 17.4 L57.3 16.4 L58.6 15.5 L59.9 14.6 L61.3 13.9 L62.8 13.3 L64.3 12.9 L65.9 12.5 L67.4 12.3 L69.0 12.2 L70.6 12.2 L72.2 12.4 L73.7 12.6 L75.2 13.0 L76.7 13.5 L78.2 14.2 L79.6 14.9 L80.9 15.8 L82.3 16.6 L83.6 17.4 L85.0 18.2 L86.5 18.8 L88.0 19.4 L89.5 19.9 L91.0 20.3 L92.5 20.6 L94.1 20.8 L95.7 21.0 L97.3 21.0 L98.8 21.0 L100.4 20.9 L102.0 20.7 L103.6 20.5 L105.1 20.1 L106.6 19.7 L108.1 19.1 L109.6 18.5 L111.0 17.9 L112.4 17.1 L113.8 16.3 L115.1 15.4 L116.3 14.4"/><path class="g-active" d="M22.0 48.0 L23.6 48.0 L25.2 47.8 L26.7 47.6 L28.3 47.3 L29.8 46.9 L31.3 46.5 L32.8 45.9 L34.3 45.3 L35.7 44.6 L37.1 43.8 L38.4 43.0 L39.7 42.1 L40.9 41.1 L42.1 40.0 L43.3 38.9 L44.3 37.7 L45.3 36.5 L46.2 35.2 L47.1 33.9 L47.9 32.5 L48.6 31.1 L49.2 29.7 L49.8 28.2 L50.3 26.7" style="opacity:1"/><path class="g-active" d="M50.3 26.7 L50.8 25.2 L51.4 23.7 L52.1 22.3 L52.9 21.0 L53.9 19.7 L54.9 18.5 L56.1 17.4 L57.3 16.4 L58.6 15.5 L59.9 14.6 L61.3 13.9 L62.8 13.3 L64.3 12.9 L65.9 12.5 L67.4 12.3 L69.0 12.2 L70.6 12.2 L72.2 12.4 L73.7 12.6 L75.2 13.0 L76.7 13.5 L78.2 14.2 L79.6 14.9 L80.9 15.8" style="opacity:0.55"/><path class="g-active" d="M80.9 15.8 L82.3 16.6 L83.6 17.4 L85.0 18.2 L86.5 18.8 L88.0 19.4 L89.5 19.9 L91.0 20.3 L92.5 20.6 L94.1 20.8 L95.7 21.0 L97.3 21.0 L98.8 21.0 L100.4 20.9 L102.0 20.7 L103.6 20.5 L105.1 20.1 L106.6 19.7 L108.1 19.1 L109.6 18.5 L111.0 17.9 L112.4 17.1 L113.8 16.3 L115.1 15.4 L116.3 14.4" style="opacity:1"/><circle class="g-joint" cx="50.3" cy="26.7" r="3"/><circle class="g-joint" cx="80.9" cy="15.8" r="3"/></svg></div><span class="step-num">3</span>
+<h3 data-i18n="t019">Making it bend where I want.</h3>
+<p data-i18n="t020">Splitting the actuator into sections that are driven separately lets you shape it, not just bend it. I work on hysteresis compensation and on control methods that scale to many sections.</p>
+</li>
+<li class="step">
+<div class="step-art"><svg aria-hidden="true" class="glyph" viewBox="0 0 140 92"><path class="g-cone" d="M75.5 13.2 L117.3 -6.0 A46 46 0 0 1 117.7 31.5 Z"/><rect class="g-clamp" x="29" y="82" width="22" height="7" rx="2"/><path class="g-body" d="M40.0 84.0 L40.0 82.8 L40.0 81.5 L40.0 80.2 L40.0 79.0 L40.0 77.8 L40.0 76.5 L40.0 75.2 L40.0 74.0 L40.0 72.8 L40.0 71.5 L40.0 70.2 L40.0 69.0 L40.0 67.8 L40.0 66.5 L40.0 65.2 L40.0 64.0 L40.0 62.8 L40.0 61.5 L40.0 60.2 L40.0 59.0 L40.0 57.8 L40.0 56.5 L40.0 55.2 L40.0 54.0 L40.0 52.8 L40.1 51.5 L40.2 50.3 L40.3 49.0 L40.4 47.8 L40.6 46.5 L40.8 45.3 L41.1 44.1 L41.4 42.9 L41.7 41.7 L42.1 40.5 L42.5 39.3 L42.9 38.1 L43.3 36.9 L43.8 35.8 L44.3 34.6 L44.9 33.5 L45.5 32.4 L46.1 31.3 L46.7 30.2 L47.4 29.2 L48.1 28.1 L48.8 27.1 L49.5 26.1 L50.3 25.2 L51.2 24.2 L52.0 23.3 L52.9 22.4 L53.8 21.6 L54.8 20.8 L55.8 20.0 L56.8 19.3 L57.8 18.6 L58.9 17.9 L59.9 17.3 L61.1 16.7 L62.2 16.2 L63.3 15.7 L64.5 15.2 L65.7 14.8 L66.9 14.5 L68.1 14.2 L69.3 13.9 L70.5 13.7 L71.8 13.5 L73.0 13.4 L74.3 13.3 L75.5 13.2"/><path class="g-active" d="M40.0 54.0 L40.0 52.8 L40.1 51.5 L40.2 50.3 L40.3 49.0 L40.4 47.8 L40.6 46.5 L40.8 45.3 L41.1 44.1 L41.4 42.9 L41.7 41.7 L42.1 40.5 L42.5 39.3 L42.9 38.1 L43.3 36.9 L43.8 35.8 L44.3 34.6 L44.9 33.5 L45.5 32.4 L46.1 31.3 L46.7 30.2 L47.4 29.2 L48.1 28.1 L48.8 27.1 L49.5 26.1 L50.3 25.2 L51.2 24.2 L52.0 23.3 L52.9 22.4 L53.8 21.6 L54.8 20.8 L55.8 20.0 L56.8 19.3 L57.8 18.6 L58.9 17.9 L59.9 17.3 L61.1 16.7 L62.2 16.2 L63.3 15.7 L64.5 15.2 L65.7 14.8 L66.9 14.5 L68.1 14.2 L69.3 13.9 L70.5 13.7 L71.8 13.5 L73.0 13.4 L74.3 13.3 L75.5 13.2"/><circle class="g-cap" cx="75.5" cy="13.2" r="5"/></svg></div><span class="step-num">4</span>
+<h3 data-i18n="t022">Designing the robot's tip.</h3>
+<p data-i18n="t023">All of this feeds into the design of a small steerable tip that can point its camera at as much of the bladder wall as possible.</p>
+</li>
+</ol>
+</section>
+
+<section aria-labelledby="goal-title" class="section goal" id="steer">
+<header class="section-head split-head">
+<h2 data-i18n="t025" id="goal-title">What the robot is for.</h2>
+<p data-i18n="t026">A passive shaft goes in through the urethra, and a short steerable tip looks around inside the bladder. As it scans, the video can be stitched into a 3D map of the bladder wall, which helps doctors find and document lesions.</p>
+</header>
+<div class="steer">
 <div class="steer-copy">
-<h2 data-i18n="t119" id="steer-title">Steer the tip yourself.</h2>
+<h3 data-i18n="t119" id="steer-title">Steer the tip yourself.</h3>
 <p data-i18n="t120">Each section of the tip is a strip of electroactive film. Give a section some voltage and it curves; combine three and the camera can look almost anywhere. The wall turns blue wherever the camera has already looked.</p>
 <div class="steer-controls">
 <label class="steer-row"><span data-i18n="t121">Insertion</span><input dir="ltr" max="100" min="0" name="ins" type="range" value="45"/></label>
@@ -89,57 +122,15 @@
 <p aria-live="polite" class="steer-score"><span class="num" dir="ltr"><b>0</b><span class="pct">%</span></span> <span data-i18n="t128">of the wall seen</span></p>
 <div class="steer-buttons">
 <button aria-pressed="false" class="button primary steer-scan" type="button"><span class="when-idle" data-i18n="t125">Scan for me</span><span class="when-busy" data-i18n="t126">Stop</span></button>
-<button class="button secondary steer-clear" type="button" data-i18n="t127">Clear the wall</button>
+<button class="button secondary steer-clear" data-i18n="t127" type="button">Clear the wall</button>
 </div>
 </div>
-<p class="steer-note" data-i18n="t129">A sketch, not a model of the real robot: here the tip moves in a plane, and each section's curvature grows with the square of its voltage, as it does for electrostrictive polymers.</p>
 </div>
 <figure class="steer-stage">
-<svg aria-label="The robot's tip inside the bladder. A cone shows what the camera sees, and the parts of the wall it has already seen are highlighted." class="steer-svg" data-i18n-alt="t130" role="img" viewBox="40 40 520 560"></svg>
+<svg aria-label="The robot's tip inside the bladder. A cone shows what the camera sees, and the parts of the wall it has already seen are highlighted." class="steer-svg" data-i18n-alt="t130" role="img" viewBox="60 50 480 510"></svg>
+<figcaption data-i18n="t129">A sketch, not a model of the real robot: here the tip moves in a plane, and each section's curvature grows with the square of its voltage, as it does for electrostrictive polymers.</figcaption>
 </figure>
 </div>
-</section>
-
-<section aria-labelledby="path-title" class="section path">
-<header class="section-head">
-<h2 data-i18n="t010" id="path-title">From the material to the robot.</h2>
-<p data-i18n="t011">I started with the material itself, measuring how it responds to an electric field. From there I modeled the actuators, learned to control how they bend, and used all of it to design the tip of a small robot for bladder inspection.</p>
-</header>
-<ol class="spine">
-<li class="spine-step">
-<span aria-hidden="true" class="spine-num">1</span>
-<div class="spine-text"><h3 data-i18n="t013">How a thin film bends.</h3><p data-i18n="t014">An electroactive film stretches when a voltage is applied. Bond it to a passive layer and it curves instead. I measured how these polymers respond, which gave me the parameters for every model that came after.</p></div>
-<figure class="plate"><img alt="A free film only stretches, while a film bonded to a passive layer curves" data-i18n-alt="t036" height="502" loading="lazy" src="assets/strain-to-bending.png" width="1200"/></figure>
-</li>
-<li class="spine-step">
-<span aria-hidden="true" class="spine-num">2</span>
-<div class="spine-text"><h3 data-i18n="t016">From film to actuator.</h3><p data-i18n="t017">Stacking several active layers on a substrate gives more bending for the same voltage. I model these stacks to predict how far the actuator will bend and to choose its layers.</p></div>
-<figure class="plate"><img alt="Stack of polymer and electrode layers on a substrate, and the resulting bent actuator" data-i18n-alt="t037" height="502" loading="lazy" src="assets/multilayer-actuator.png" width="1222"/></figure>
-</li>
-<li class="spine-step">
-<span aria-hidden="true" class="spine-num">3</span>
-<div class="spine-text"><h3 data-i18n="t019">Making it bend where I want.</h3><p data-i18n="t020">Splitting the actuator into sections that are driven separately lets you shape it, not just bend it. I work on hysteresis compensation and on control methods that scale to many sections.</p></div>
-<figure class="plate"><img alt="Electrode layout of an actuator split into three sections" data-i18n-alt="t038" height="472" loading="lazy" src="assets/three-section-layout.png" width="1228"/></figure>
-</li>
-<li class="spine-step">
-<span aria-hidden="true" class="spine-num">4</span>
-<div class="spine-text"><h3 data-i18n="t022">Designing the robot's tip.</h3><p data-i18n="t023">All of this feeds into the design of a small steerable tip that can point its camera at as much of the bladder wall as possible.</p></div>
-<figure class="plate"><img alt="The robot's bent tip pointing its camera at the bladder wall" data-i18n-alt="t039" height="1058" loading="lazy" src="assets/wall-inspection.jpg" width="1200"/></figure>
-</li>
-</ol>
-</section>
-
-<section aria-labelledby="goal-title" class="section goal">
-<div class="goal-grid">
-<div class="goal-copy">
-<h2 data-i18n="t025" id="goal-title">What the robot is for.</h2>
-<p data-i18n="t026">A passive shaft goes in through the urethra, and a short steerable tip looks around inside the bladder. As it scans, the video can be stitched into a 3D map of the bladder wall, which helps doctors find and document lesions.</p>
-<figure class="plate plate-small"><img alt="Robot cross-section" data-i18n-alt="t104" height="302" loading="lazy" src="assets/robot-cross-section.png" width="540"/></figure>
-<p data-i18n="t027">The tip carries a camera, LEDs and air channels, with the actuators laid along it either straight or wrapped in a helix.</p>
-</div>
-<figure class="plate plate-tall"><img alt="The robot entering the bladder through the urethra, with a steerable blue tip" data-i18n-alt="t040" height="1121" loading="lazy" src="assets/clinical-concept.jpg" width="1400"/></figure>
-</div>
-<figure class="plate plate-wide"><img alt="From robot scanning to video, 3D reconstruction and lesion detection" data-i18n-alt="t041" height="361" loading="lazy" src="assets/inspection-pipeline.jpg" width="1409"/></figure>
 </section>
 
 <section aria-labelledby="papers-title" class="section papers">
@@ -158,8 +149,8 @@
 
 <section aria-labelledby="next-title" class="next">
 <div class="next-inner">
-<h2 data-i18n="t133" id="next-title">Next: a postdoc.</h2>
-<p data-i18n="t134">I defend my PhD in November 2026 and I'm looking for a postdoc. If you work on soft or continuum robots, I'd love to hear from you.</p>
+<h2 data-i18n="t133" id="next-title">Let's talk.</h2>
+<p data-i18n="t134">If you have an idea for a project or a collaboration, I'd be glad to discuss it.</p>
 <a class="next-mail" href="mailto:imane.ferradj@ensam.eu">imane.ferradj@ensam.eu</a>
 </div>
 </section>
