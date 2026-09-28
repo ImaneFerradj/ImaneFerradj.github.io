@@ -1,17 +1,56 @@
-/* Visitor statistics with Umami Cloud (free, no cookies).
-   1. Create a free account at https://cloud.umami.is and add the website
-      imaneferradj.github.io.
-   2. Copy the "Website ID" Umami gives you and paste it between the quotes below.
-   Nothing is sent until an ID is filled in. Visits are only counted on the real
-   site (imaneferradj.github.io), never on local previews. */
-var UMAMI_WEBSITE_ID = "4e5fa251-d523-42a6-918d-ac7f06e2ee6c";
+/* Website analytics with Google Analytics 4.
+ *
+ * Tracking only runs on the real GitHub Pages website.
+ * Local previews and file:// pages are ignored.
+ */
+
+var GA_MEASUREMENT_ID = "G-3L39H09NNE";
 
 (function () {
-  if (!UMAMI_WEBSITE_ID || location.protocol === "file:") return;
-  var s = document.createElement("script");
-  s.defer = true;
-  s.src = "https://cloud.umami.is/script.js";
-  s.setAttribute("data-website-id", UMAMI_WEBSITE_ID);
-  s.setAttribute("data-domains", "imaneferradj.github.io");
-  document.head.appendChild(s);
+  if (
+    !GA_MEASUREMENT_ID ||
+    location.protocol === "file:" ||
+    location.hostname !== "imaneferradj.github.io"
+  ) {
+    return;
+  }
+
+  /*
+   * Personal opt-out.
+   *
+   * Run this once in your browser console to exclude yourself:
+   *
+   * localStorage.setItem("analytics_opt_out", "1");
+   *
+   * To enable tracking again:
+   *
+   * localStorage.removeItem("analytics_opt_out");
+   */
+  if (localStorage.getItem("analytics_opt_out") === "1") {
+    return;
+  }
+
+  var script = document.createElement("script");
+  script.async = true;
+  script.src =
+    "https://www.googletagmanager.com/gtag/js?id=" +
+    encodeURIComponent(GA_MEASUREMENT_ID);
+
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+
+  window.gtag = gtag;
+
+  gtag("js", new Date());
+
+  gtag("config", GA_MEASUREMENT_ID, {
+    send_page_view: true,
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
 })();
