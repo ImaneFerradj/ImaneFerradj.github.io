@@ -135,9 +135,10 @@
   "t130": "The robot's tip inside the bladder. A cone shows what the camera sees, and the parts of the wall it has already seen are highlighted.",
   "t131": "Recent papers.",
   "t132": "All publications",
-  "t133": "Let's talk.",
-  "t134": "If you have an idea for a project or a collaboration, I'd be glad to discuss it.",
-  "t137": "Skip to content"
+  "t133": "Let's exchange ideas.",
+  "t134": "I'm always happy to talk about soft and continuum robotics: smart materials, modeling, control, or a new idea you'd like to explore. Feel free to write to me.",
+  "t137": "Skip to content",
+  "t138": "The procedure"
  },
  "fr": {
   "t001": "Accueil",
@@ -272,9 +273,10 @@
   "t130": "L'extrémité du robot dans la vessie. Un cône montre ce que voit la caméra, et les zones de la paroi déjà observées sont mises en évidence.",
   "t131": "Articles récents.",
   "t132": "Toutes les publications",
-  "t133": "Parlons-en.",
-  "t134": "Si vous avez une idée de projet ou de collaboration, je serai ravie d'en discuter.",
-  "t137": "Aller au contenu"
+  "t133": "Échangeons des idées.",
+  "t134": "Je suis toujours ravie d'échanger autour de la robotique souple et continue : matériaux intelligents, modélisation, commande, ou une idée nouvelle que vous aimeriez explorer. N'hésitez pas à m'écrire.",
+  "t137": "Aller au contenu",
+  "t138": "La procédure"
  },
  "ar": {
   "t001": "الرئيسية",
@@ -409,9 +411,10 @@
   "t130": "طرف الروبوت داخل المثانة. يُظهر المخروط ما تراه الكاميرا، وتُبرَز أجزاء الجدار التي رأتها من قبل.",
   "t131": "أحدث الأبحاث.",
   "t132": "جميع المنشورات",
-  "t133": "لنتحدّث.",
-  "t134": "إن كانت لديكم فكرة مشروع أو تعاون، يسعدني أن نتناقش فيها.",
-  "t137": "انتقل إلى المحتوى"
+  "t133": "لنتبادل الأفكار.",
+  "t134": "يسعدني دائمًا الحديث عن الروبوتات المرنة والمستمرة: المواد الذكية، والنمذجة، والتحكم، أو أي فكرة جديدة تودّون استكشافها. لا تتردّدوا في مراسلتي.",
+  "t137": "انتقل إلى المحتوى",
+  "t138": "الإجراء"
  },
  "ja": {
   "t001": "ホーム",
@@ -546,9 +549,10 @@
   "t130": "膀胱の中のロボットの先端。円錐はカメラの視野を示し、すでに見た壁の部分が強調表示されます。",
   "t131": "最近の論文。",
   "t132": "すべての論文",
-  "t133": "お話ししましょう。",
-  "t134": "プロジェクトや共同研究のアイデアがあれば、ぜひご相談ください。",
-  "t137": "本文へ移動"
+  "t133": "アイデアを交換しましょう。",
+  "t134": "ソフトロボットや連続体ロボットについて、いつでも喜んでお話しします。スマート材料、モデル化、制御、あるいは探ってみたい新しいアイデアなど、お気軽にご連絡ください。",
+  "t137": "本文へ移動",
+  "t138": "手技の流れ"
  }
 };
   var LANGS = ["en", "fr", "ar", "ja"];
