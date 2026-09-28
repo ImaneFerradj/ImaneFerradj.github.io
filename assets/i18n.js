@@ -120,7 +120,24 @@
   "t115": "Detailed Profile — Imane Ferradj",
   "t116": "Publications — Imane Ferradj",
   "t117": "10/2023 — Present",
-  "t118": "10/2023 — expected 2026"
+  "t118": "10/2023 — expected 2026",
+  "t119": "Steer the tip yourself.",
+  "t120": "Each section of the tip is a strip of electroactive film. Give a section some voltage and it curves; combine three and the camera can look almost anywhere. The wall turns blue wherever the camera has already looked.",
+  "t121": "Insertion",
+  "t122": "Section 1",
+  "t123": "Section 2",
+  "t124": "Section 3",
+  "t125": "Scan for me",
+  "t126": "Stop",
+  "t127": "Clear the wall",
+  "t128": "of the wall seen",
+  "t129": "A sketch, not a model of the real robot: here the tip moves in a plane, and each section's curvature grows with the square of its voltage, as it does for electrostrictive polymers.",
+  "t130": "The robot's tip inside the bladder. A cone shows what the camera sees, and the parts of the wall it has already seen are highlighted.",
+  "t131": "Recent papers.",
+  "t132": "All publications",
+  "t133": "Next: a postdoc.",
+  "t134": "I defend my PhD in November 2026 and I'm looking for a postdoc. If you work on soft or continuum robots, I'd love to hear from you.",
+  "t137": "Skip to content"
  },
  "fr": {
   "t001": "Accueil",
@@ -240,7 +257,24 @@
   "t115": "Profil détaillé — Imane Ferradj",
   "t116": "Publications — Imane Ferradj",
   "t117": "10/2023 — aujourd'hui",
-  "t118": "10/2023 — fin prévue en 2026"
+  "t118": "10/2023 — fin prévue en 2026",
+  "t119": "Pilotez l'extrémité vous-même.",
+  "t120": "Chaque section de l'extrémité est une bande de film électroactif. Appliquez-lui une tension et elle se courbe ; en combinant les trois, la caméra peut regarder presque partout. La paroi devient bleue là où la caméra a déjà regardé.",
+  "t121": "Insertion",
+  "t122": "Section 1",
+  "t123": "Section 2",
+  "t124": "Section 3",
+  "t125": "Balayer pour moi",
+  "t126": "Arrêter",
+  "t127": "Effacer la paroi",
+  "t128": "de la paroi observée",
+  "t129": "Un croquis, pas un modèle du vrai robot : ici l'extrémité se déplace dans un plan, et la courbure de chaque section croît avec le carré de sa tension, comme pour les polymères électrostrictifs.",
+  "t130": "L'extrémité du robot dans la vessie. Un cône montre ce que voit la caméra, et les zones de la paroi déjà observées sont mises en évidence.",
+  "t131": "Articles récents.",
+  "t132": "Toutes les publications",
+  "t133": "La suite : un postdoc.",
+  "t134": "Je soutiens ma thèse en novembre 2026 et je cherche un postdoc. Si vous travaillez sur les robots souples ou continus, écrivez-moi.",
+  "t137": "Aller au contenu"
  },
  "ar": {
   "t001": "الرئيسية",
@@ -360,7 +394,24 @@
   "t115": "الملف الشخصي — Imane Ferradj",
   "t116": "المنشورات — Imane Ferradj",
   "t117": "10/2023 — حتى الآن",
-  "t118": "10/2023 — متوقّع في 2026"
+  "t118": "10/2023 — متوقّع في 2026",
+  "t119": "وجِّه الطرف بنفسك.",
+  "t120": "كل قسم من الطرف شريط من غشاء كهروفعّال. طبِّق عليه جهدًا كهربائيًا فينحني، واجمع الأقسام الثلاثة لتتمكن الكاميرا من النظر في كل اتجاه تقريبًا. يتحوّل الجدار إلى الأزرق حيثما نظرت الكاميرا.",
+  "t121": "الإدخال",
+  "t122": "القسم 1",
+  "t123": "القسم 2",
+  "t124": "القسم 3",
+  "t125": "امسح نيابةً عني",
+  "t126": "إيقاف",
+  "t127": "امسح الجدار",
+  "t128": "من الجدار تمت رؤيته",
+  "t129": "رسم توضيحي وليس نموذجًا للروبوت الحقيقي: هنا يتحرك الطرف في مستوى واحد، ويزداد انحناء كل قسم مع مربع جهده، كما هو الحال في البوليمرات الكهروتقبّضية.",
+  "t130": "طرف الروبوت داخل المثانة. يُظهر المخروط ما تراه الكاميرا، وتُبرَز أجزاء الجدار التي رأتها من قبل.",
+  "t131": "أحدث الأبحاث.",
+  "t132": "جميع المنشورات",
+  "t133": "الخطوة التالية: ما بعد الدكتوراه.",
+  "t134": "أناقش أطروحتي في نوفمبر 2026 وأبحث عن منصب ما بعد الدكتوراه. إن كنتم تعملون على الروبوتات المرنة أو المستمرة، يسعدني أن تتواصلوا معي.",
+  "t137": "انتقل إلى المحتوى"
  },
  "ja": {
   "t001": "ホーム",
@@ -480,7 +531,24 @@
   "t115": "詳細プロフィール — Imane Ferradj",
   "t116": "論文 — Imane Ferradj",
   "t117": "2023年10月 — 現在",
-  "t118": "2023年10月 — 2026年修了予定"
+  "t118": "2023年10月 — 2026年修了予定",
+  "t119": "先端を動かしてみる。",
+  "t120": "先端の各セクションは電気活性フィルムの帯です。電圧をかけると曲がり、3つを組み合わせるとカメラはほぼどこでも見られます。カメラが一度見た壁は青く変わります。",
+  "t121": "挿入",
+  "t122": "セクション1",
+  "t123": "セクション2",
+  "t124": "セクション3",
+  "t125": "自動でスキャン",
+  "t126": "停止",
+  "t127": "壁をリセット",
+  "t128": "の壁を確認",
+  "t129": "実際のロボットのモデルではなく、イラストです。ここでは先端は平面内を動き、各セクションの曲率は電歪ポリマーと同じく電圧の2乗に比例して大きくなります。",
+  "t130": "膀胱の中のロボットの先端。円錐はカメラの視野を示し、すでに見た壁の部分が強調表示されます。",
+  "t131": "最近の論文。",
+  "t132": "すべての論文",
+  "t133": "次は、ポスドクへ。",
+  "t134": "2026年11月に博士論文の審査を受け、ポスドクのポジションを探しています。ソフトロボットや連続体ロボットの研究をされている方、ぜひご連絡ください。",
+  "t137": "本文へ移動"
  }
 };
   var LANGS = ["en", "fr", "ar", "ja"];
@@ -505,7 +573,7 @@
     document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
       var k = el.getAttribute("data-i18n-alt");
       var v = d[k] != null ? d[k] : en[k];
-      if (v != null) el.setAttribute("alt", v);
+      if (v != null) el.setAttribute(el.tagName === "IMG" ? "alt" : "aria-label", v);
     });
     root.lang = l;
     root.dir = l === "ar" ? "rtl" : "ltr";
