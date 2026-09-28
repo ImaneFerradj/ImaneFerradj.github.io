@@ -16,6 +16,7 @@
 <script defer="" src="assets/i18n.js"></script>
 <script defer="" src="assets/script.js"></script>
 <script defer="" src="assets/steer.js"></script>
+<script defer="" src="assets/chain.js"></script>
 <title data-i18n="t114">Imane Ferradj — Continuum Robotics</title>
 <meta content="Imane Ferradj — Continuum Robotics" property="og:title"/>
 <meta content="Modeling, control, and optimization of electroactive actuators for continuum robotics." property="og:description"/>
@@ -79,28 +80,32 @@
 <h2 data-i18n="t010" id="path-title">From the material to the robot.</h2>
 <p data-i18n="t011">I started with the material itself, measuring how it responds to an electric field. From there I modeled the actuators, learned to control how they bend, and used all of it to design the tip of a small robot for bladder inspection.</p>
 </header>
-<ol class="steps">
-<li class="step">
-<figure class="step-fig"><img alt="A free film only stretches, while a film bonded to a passive layer curves" data-i18n-alt="t036" height="545" loading="lazy" src="assets/fig-strain-bending.png" width="1400"/></figure><span class="step-num">1</span>
-<h3 data-i18n="t013">How a thin film bends.</h3>
-<p data-i18n="t014">An electroactive film stretches when a voltage is applied. Bond it to a passive layer and it curves instead. I measured how these polymers respond, which gave me the parameters for every model that came after.</p>
-</li>
-<li class="step">
-<figure class="step-fig"><img alt="Stack of polymer and electrode layers on a substrate, and the resulting bent actuator" data-i18n-alt="t037" height="502" loading="lazy" src="assets/fig-multilayer.png" width="1222"/></figure><span class="step-num">2</span>
-<h3 data-i18n="t016">From film to actuator.</h3>
-<p data-i18n="t017">Stacking several active layers on a substrate gives more bending for the same voltage. I model these stacks to predict how far the actuator will bend and to choose its layers.</p>
-</li>
-<li class="step">
-<figure class="step-fig"><img alt="Electrode layout of an actuator split into three sections" data-i18n-alt="t038" height="472" loading="lazy" src="assets/fig-three-sections.png" width="1228"/></figure><span class="step-num">3</span>
-<h3 data-i18n="t019">Making it bend where I want.</h3>
-<p data-i18n="t020">Splitting the actuator into sections that are driven separately lets you shape it, not just bend it. I work on hysteresis compensation and on control methods that scale to many sections.</p>
-</li>
-<li class="step">
-<figure class="step-fig"><img alt="The robot's bent tip pointing its camera at the bladder wall" data-i18n-alt="t039" height="1246" loading="lazy" src="assets/fig-wall-inspection.jpg" width="1400"/></figure><span class="step-num">4</span>
-<h3 data-i18n="t022">Designing the robot's tip.</h3>
-<p data-i18n="t023">All of this feeds into the design of a small steerable tip that can point its camera at as much of the bladder wall as possible.</p>
-</li>
-</ol>
+<div class="chain">
+<div aria-label="Steps" class="chain-track" role="tablist">
+<button aria-controls="chain-1" aria-selected="true" class="chain-node" id="chain-tab-1" role="tab" type="button"><span class="chain-ring">1</span><span class="chain-label" data-i18n="t139">The material</span></button>
+<button aria-controls="chain-2" aria-selected="false" class="chain-node" id="chain-tab-2" role="tab" type="button"><span class="chain-ring">2</span><span class="chain-label" data-i18n="t140">The actuator</span></button>
+<button aria-controls="chain-3" aria-selected="false" class="chain-node" id="chain-tab-3" role="tab" type="button"><span class="chain-ring">3</span><span class="chain-label" data-i18n="t141">Control</span></button>
+<button aria-controls="chain-4" aria-selected="false" class="chain-node" id="chain-tab-4" role="tab" type="button"><span class="chain-ring">4</span><span class="chain-label" data-i18n="t142">The robot</span></button>
+</div>
+<div class="chain-panels">
+<div aria-labelledby="chain-tab-1" class="chain-panel is-active" id="chain-1" role="tabpanel">
+<div class="chain-text"><span aria-hidden="true" class="chain-count">1 / 4</span><h3 data-i18n="t013">How a thin film bends.</h3><p data-i18n="t014">An electroactive film stretches when a voltage is applied. Bond it to a passive layer and it curves instead. I measured how these polymers respond, which gave me the parameters for every model that came after.</p><button class="chain-next" data-i18n="t143" type="button">Next step</button></div>
+<figure class="chain-fig"><img alt="A free film only stretches, while a film bonded to a passive layer curves" data-i18n-alt="t036" height="545" loading="lazy" src="assets/fig-strain-bending.png" width="1400"/></figure>
+</div>
+<div aria-labelledby="chain-tab-2" class="chain-panel" id="chain-2" role="tabpanel">
+<div class="chain-text"><span aria-hidden="true" class="chain-count">2 / 4</span><h3 data-i18n="t016">From film to actuator.</h3><p data-i18n="t017">Stacking several active layers on a substrate gives more bending for the same voltage. I model these stacks to predict how far the actuator will bend and to choose its layers.</p><button class="chain-next" data-i18n="t143" type="button">Next step</button></div>
+<figure class="chain-fig"><img alt="Stack of polymer and electrode layers on a substrate, and the resulting bent actuator" data-i18n-alt="t037" height="502" loading="lazy" src="assets/fig-multilayer.png" width="1222"/></figure>
+</div>
+<div aria-labelledby="chain-tab-3" class="chain-panel" id="chain-3" role="tabpanel">
+<div class="chain-text"><span aria-hidden="true" class="chain-count">3 / 4</span><h3 data-i18n="t019">Making it bend where I want.</h3><p data-i18n="t020">Splitting the actuator into sections that are driven separately lets you shape it, not just bend it. I work on hysteresis compensation and on control methods that scale to many sections.</p><button class="chain-next" data-i18n="t143" type="button">Next step</button></div>
+<figure class="chain-fig"><img alt="Electrode layout of an actuator split into three sections" data-i18n-alt="t038" height="472" loading="lazy" src="assets/fig-three-sections.png" width="1228"/></figure>
+</div>
+<div aria-labelledby="chain-tab-4" class="chain-panel" id="chain-4" role="tabpanel">
+<div class="chain-text"><span aria-hidden="true" class="chain-count">4 / 4</span><h3 data-i18n="t022">Designing the robot's tip.</h3><p data-i18n="t023">All of this feeds into the design of a small steerable tip that can point its camera at as much of the bladder wall as possible.</p><button class="chain-next" data-i18n="t144" type="button">Start again</button></div>
+<figure class="chain-fig"><img alt="The robot's bent tip pointing its camera at the bladder wall" data-i18n-alt="t039" height="1246" loading="lazy" src="assets/fig-wall-inspection.jpg" width="1400"/></figure>
+</div>
+</div>
+</div>
 </section>
 
 <section aria-labelledby="goal-title" class="section goal" id="steer">
@@ -108,8 +113,8 @@
 <h2 data-i18n="t025" id="goal-title">What the robot is for.</h2>
 <p data-i18n="t026">A passive shaft goes in through the urethra, and a short steerable tip looks around inside the bladder. As it scans, the video can be stitched into a 3D map of the bladder wall, which helps doctors find and document lesions.</p>
 </header>
-<div class="fig-row">
-<figure class="fig-card"><img alt="The robot entering the bladder through the urethra, with a steerable blue tip" data-i18n-alt="t040" height="1122" loading="lazy" src="assets/fig-clinical.jpg" width="1400"/><figcaption data-i18n="t138">The procedure</figcaption></figure>
+<div class="fig-mosaic">
+<figure class="fig-card fig-main"><img alt="The robot entering the bladder through the urethra, with a steerable blue tip" data-i18n-alt="t040" height="1122" loading="lazy" src="assets/fig-clinical.jpg" width="1400"/><figcaption data-i18n="t138">The procedure</figcaption></figure>
 <figure class="fig-card"><img alt="Robot cross-section" data-i18n-alt="t104" height="572" loading="lazy" src="assets/fig-cross-section.png" width="959"/><figcaption data-i18n="t104">Robot cross-section</figcaption></figure>
 <figure class="fig-card"><img alt="Parallel and helical routing" data-i18n-alt="t106" height="864" loading="lazy" src="assets/fig-routing.png" width="911"/><figcaption data-i18n="t106">Parallel and helical routing</figcaption></figure>
 </div>
