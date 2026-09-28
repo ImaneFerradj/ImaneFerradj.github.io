@@ -105,9 +105,13 @@
   }
 
   // ---- Render ----
+  var keys = ["ins", "s1", "s2", "s3"];
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var cur = keys.map(function (k) { return +inputs[k].value; });
+
   function render() {
-    var baseY = 452 - (+inputs.ins.value) * 1.35;
-    var vs = [+inputs.s1.value, +inputs.s2.value, +inputs.s3.value];
+    var baseY = 452 - cur[0] * 1.35;
+    var vs = [cur[1], cur[2], cur[3]];
     var ks = vs.map(curv);
     var bb = backbone(baseY, ks);
     if (!inside(bb.pts)) {             // the wall stops the tip: scale the bend back until it fits
@@ -155,33 +159,46 @@
     out.textContent = Math.round(100 * count / N);
   }
 
-  // ---- Interaction ----
+  // ---- Interaction: the tip eases toward the slider values ----
   var raf = 0, scanning = false, t0 = 0;
-  function schedule() { if (!raf) raf = requestAnimationFrame(function () { raf = 0; render(); }); }
-  Object.keys(inputs).forEach(function (k) {
-    inputs[k].addEventListener("input", function (e) { if (e.isTrusted) stopScan(); schedule(); });
+  function tick(now) {
+    raf = 0;
+    if (scanning) {
+      var t = (now - t0) / 1000;
+      if (t > 16) stopScan();
+      else {
+        inputs.ins.value = 50 + 48 * Math.sin(0.45 * t - 1.2);
+        inputs.s1.value = 100 * Math.sin(0.9 * t);
+        inputs.s2.value = 100 * Math.sin(1.37 * t + 1.1);
+        inputs.s3.value = 100 * Math.sin(2.1 * t + 2.3);
+      }
+    }
+    var moving = false;
+    keys.forEach(function (k, i) {
+      var target = +inputs[k].value, d = target - cur[i];
+      if (reduce || Math.abs(d) < 0.3) cur[i] = target;
+      else { cur[i] += d * 0.16; moving = true; }
+    });
+    render();
+    if (moving || scanning) raf = requestAnimationFrame(tick);
+  }
+  function wake() { if (!raf) raf = requestAnimationFrame(tick); }
+  keys.forEach(function (k) {
+    inputs[k].addEventListener("input", function (e) { if (e.isTrusted) stopScan(); wake(); });
   });
   clearBtn.addEventListener("click", function () { seen.fill(0); render(); });
 
-  function setScanLabel() {
-    scanBtn.setAttribute("aria-pressed", String(scanning));
-    root.classList.toggle("is-scanning", scanning);
-  }
-  function stopScan() { scanning = false; setScanLabel(); }
-  function step(now) {
-    if (!scanning) return;
-    var t = (now - t0) / 1000;
-    if (t > 16) { stopScan(); return; }
-    inputs.ins.value = 50 + 48 * Math.sin(0.45 * t - 1.2);
-    inputs.s1.value = 100 * Math.sin(0.9 * t);
-    inputs.s2.value = 100 * Math.sin(1.37 * t + 1.1);
-    inputs.s3.value = 100 * Math.sin(2.1 * t + 2.3);
-    render();
-    requestAnimationFrame(step);
+  function stopScan() {
+    scanning = false;
+    scanBtn.setAttribute("aria-pressed", "false");
+    root.classList.remove("is-scanning");
   }
   scanBtn.addEventListener("click", function () {
     if (scanning) { stopScan(); return; }
-    scanning = true; setScanLabel(); t0 = performance.now(); requestAnimationFrame(step);
+    scanning = true; t0 = performance.now();
+    scanBtn.setAttribute("aria-pressed", "true");
+    root.classList.add("is-scanning");
+    wake();
   });
 
   render();

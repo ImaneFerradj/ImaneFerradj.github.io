@@ -135,8 +135,8 @@
   "t130": "The robot's tip inside the bladder. A cone shows what the camera sees, and the parts of the wall it has already seen are highlighted.",
   "t131": "Recent papers.",
   "t132": "All publications",
-  "t133": "Next: a postdoc.",
-  "t134": "I defend my PhD in November 2026 and I'm looking for a postdoc. If you work on soft or continuum robots, I'd love to hear from you.",
+  "t133": "Let's talk.",
+  "t134": "If you have an idea for a project or a collaboration, I'd be glad to discuss it.",
   "t137": "Skip to content"
  },
  "fr": {
@@ -272,8 +272,8 @@
   "t130": "L'extrémité du robot dans la vessie. Un cône montre ce que voit la caméra, et les zones de la paroi déjà observées sont mises en évidence.",
   "t131": "Articles récents.",
   "t132": "Toutes les publications",
-  "t133": "La suite : un postdoc.",
-  "t134": "Je soutiens ma thèse en novembre 2026 et je cherche un postdoc. Si vous travaillez sur les robots souples ou continus, écrivez-moi.",
+  "t133": "Parlons-en.",
+  "t134": "Si vous avez une idée de projet ou de collaboration, je serai ravie d'en discuter.",
   "t137": "Aller au contenu"
  },
  "ar": {
@@ -409,8 +409,8 @@
   "t130": "طرف الروبوت داخل المثانة. يُظهر المخروط ما تراه الكاميرا، وتُبرَز أجزاء الجدار التي رأتها من قبل.",
   "t131": "أحدث الأبحاث.",
   "t132": "جميع المنشورات",
-  "t133": "الخطوة التالية: ما بعد الدكتوراه.",
-  "t134": "أناقش أطروحتي في نوفمبر 2026 وأبحث عن منصب ما بعد الدكتوراه. إن كنتم تعملون على الروبوتات المرنة أو المستمرة، يسعدني أن تتواصلوا معي.",
+  "t133": "لنتحدّث.",
+  "t134": "إن كانت لديكم فكرة مشروع أو تعاون، يسعدني أن نتناقش فيها.",
   "t137": "انتقل إلى المحتوى"
  },
  "ja": {
@@ -546,8 +546,8 @@
   "t130": "膀胱の中のロボットの先端。円錐はカメラの視野を示し、すでに見た壁の部分が強調表示されます。",
   "t131": "最近の論文。",
   "t132": "すべての論文",
-  "t133": "次は、ポスドクへ。",
-  "t134": "2026年11月に博士論文の審査を受け、ポスドクのポジションを探しています。ソフトロボットや連続体ロボットの研究をされている方、ぜひご連絡ください。",
+  "t133": "お話ししましょう。",
+  "t134": "プロジェクトや共同研究のアイデアがあれば、ぜひご相談ください。",
   "t137": "本文へ移動"
  }
 };
