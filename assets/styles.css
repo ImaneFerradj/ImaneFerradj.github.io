@@ -150,11 +150,30 @@ html:not(.js) .chain-panel{grid-area:auto}
 .steer-score .pct{font-family:var(--serif);font-size:22px;color:var(--ink)}
 .steer-buttons{display:flex;gap:8px;flex-wrap:wrap}
 .steer-buttons .button{min-height:40px;padding:0 18px;font-size:14px}
+.steer-buttons .steer-scan{min-width:8.4em}
 .steer-scan .when-busy{display:none}
 .is-scanning .steer-scan .when-idle{display:none}
 .is-scanning .steer-scan .when-busy{display:inline}
 .steer-stage{margin:0;justify-self:center;width:100%}
 .steer-svg{display:block;width:100%;height:auto;max-height:460px;border-radius:22px;background:radial-gradient(circle at 50% 42%,#fffaf9,#f1f6f9 72%)}
+.steer-view{position:relative}
+.steer-canvas{display:block;width:100%;aspect-ratio:480/510;max-height:520px;border-radius:22px;background:radial-gradient(circle at 50% 42%,#fffaf9,#f1f6f9 72%);cursor:grab;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.steer-canvas:active{cursor:grabbing}
+.steer-canvas:focus{outline:none}
+.steer-canvas:focus-visible{outline:2px solid var(--volt);outline-offset:3px}
+.steer-inset{position:absolute;inset-inline-end:14px;bottom:16px;width:34%;aspect-ratio:1/1;padding:0;border:0;border-radius:50%;background:transparent;cursor:pointer;box-shadow:0 12px 28px -12px rgba(40,50,70,.55);-webkit-tap-highlight-color:transparent}
+.steer-inset:focus-visible{outline:2px solid var(--volt);outline-offset:3px}
+.steer-inset-label{position:absolute;left:50%;bottom:-11px;transform:translateX(-50%);white-space:nowrap;font-size:12px;font-weight:600;line-height:1;color:var(--text);background:var(--white);padding:5px 11px;border-radius:999px;box-shadow:0 2px 8px rgba(40,60,80,.18)}
+.steer-inset .when-cam,.is-camera .steer-inset .when-out{display:none}
+.is-camera .steer-inset .when-cam{display:inline}
+.steer-loading{display:none;position:absolute;inset:0;margin:0;place-items:center;font-size:13px;color:var(--muted)}
+.is-loading .steer-loading{display:grid}
+.is-loading .steer-inset{visibility:hidden}
+.steer .steer-svg,.steer .only-2d{display:none}
+.is-2d .steer-svg{display:block}
+.is-2d p.only-2d{display:block}
+.is-2d span.only-2d{display:inline}
+.is-2d .only-3d,.is-2d .steer-canvas,.is-2d .steer-inset{display:none}
 .steer-stage figcaption{margin:12px 4px 0;font-size:12px;line-height:1.5;color:var(--muted)}
 .st-urethra{fill:none;stroke:var(--tissue);stroke-width:1.6}
 .st-wall line{stroke:var(--tissue);stroke-width:1.8;stroke-linecap:round;transition:stroke .5s ease,stroke-width .5s ease}
@@ -291,6 +310,8 @@ html:lang(ar) .paper-list h3,html:lang(ar) .pub-card h2{font-family:var(--sans)}
   .chain-panels{border-radius:22px}
   .goal .steer{border-radius:24px;padding:18px}
   .steer-svg{max-height:360px}
+  .steer-canvas{max-height:440px}
+  .steer-inset-label{font-size:11px;padding:4px 9px}
   .steer-row{grid-template-columns:84px 1fr;gap:12px}
   .paper-list li{grid-template-columns:1fr;gap:4px}
   .timeline-entry,.pub-card{grid-template-columns:1fr;gap:8px}

@@ -144,7 +144,15 @@
   "t141": "Control",
   "t142": "The robot",
   "t143": "Next step",
-  "t144": "Start again"
+  "t144": "Start again",
+  "t145": "Rotation",
+  "t146": "Camera view",
+  "t147": "Swap the main view and the camera view",
+  "t148": "Drag to turn the bladder, or tap the round window to look through the camera. The bladder is a 3D anatomical model; the robot is a sketch: its tip bends in one plane that you can rotate, and each section's curvature grows with the square of its voltage, as it does for electrostrictive polymers.",
+  "t149": "A 3D bladder with the robot's tip inside. The parts of the wall the camera has seen turn blue, and a round window shows what the camera sees.",
+  "t150": "Bladder view",
+  "t151": "Loading the 3D bladder…",
+  "t152": "Each section of the tip is a strip of electroactive film. Give a section some voltage and it curves; turn the tip and combine the three sections, and the camera can look almost anywhere. The wall turns blue wherever the camera has already looked."
  },
  "fr": {
   "t001": "Accueil",
@@ -288,7 +296,15 @@
   "t141": "La commande",
   "t142": "Le robot",
   "t143": "Étape suivante",
-  "t144": "Recommencer"
+  "t144": "Recommencer",
+  "t145": "Rotation",
+  "t146": "Vue caméra",
+  "t147": "Échanger la vue principale et la vue caméra",
+  "t148": "Faites glisser pour tourner la vessie, ou touchez la fenêtre ronde pour regarder à travers la caméra. La vessie est un modèle anatomique en 3D ; le robot, lui, est un croquis : son extrémité se courbe dans un plan que vous pouvez faire tourner, et la courbure de chaque section croît avec le carré de sa tension, comme pour les polymères électrostrictifs.",
+  "t149": "Une vessie en 3D avec l'extrémité du robot à l'intérieur. Les zones de la paroi déjà vues par la caméra deviennent bleues, et une fenêtre ronde montre l'image de la caméra.",
+  "t150": "Vue de la vessie",
+  "t151": "Chargement de la vessie en 3D…",
+  "t152": "Chaque section de l'extrémité est une bande de film électroactif. Appliquez-lui une tension et elle se courbe ; faites tourner l'extrémité et combinez les trois sections, et la caméra peut regarder presque partout. La paroi devient bleue là où la caméra a déjà regardé."
  },
  "ar": {
   "t001": "الرئيسية",
@@ -432,7 +448,15 @@
   "t141": "التحكم",
   "t142": "الروبوت",
   "t143": "الخطوة التالية",
-  "t144": "من البداية"
+  "t144": "من البداية",
+  "t145": "الدوران",
+  "t146": "منظر الكاميرا",
+  "t147": "تبديل المنظر الرئيسي ومنظر الكاميرا",
+  "t148": "اسحب لتدوير المثانة، أو المس النافذة المستديرة لترى بعين الكاميرا. المثانة نموذج تشريحي ثلاثي الأبعاد، أما الروبوت فرسم توضيحي: ينحني طرفه في مستوى واحد يمكنك تدويره، ويزداد انحناء كل قسم مع مربع جهده، كما هو الحال في البوليمرات الكهروتقبّضية.",
+  "t149": "مثانة ثلاثية الأبعاد وبداخلها طرف الروبوت. تتحوّل أجزاء الجدار التي رأتها الكاميرا إلى الأزرق، وتعرض نافذة مستديرة ما تراه الكاميرا.",
+  "t150": "منظر المثانة",
+  "t151": "جارٍ تحميل المثانة ثلاثية الأبعاد…",
+  "t152": "كل قسم من الطرف شريط من غشاء كهروفعّال. طبِّق عليه جهدًا كهربائيًا فينحني، ثم أدِر الطرف واجمع الأقسام الثلاثة لتتمكن الكاميرا من النظر في كل اتجاه تقريبًا. يتحوّل الجدار إلى الأزرق حيثما نظرت الكاميرا."
  },
  "ja": {
   "t001": "ホーム",
@@ -576,7 +600,15 @@
   "t141": "制御",
   "t142": "ロボット",
   "t143": "次へ",
-  "t144": "最初から"
+  "t144": "最初から",
+  "t145": "回転",
+  "t146": "カメラの映像",
+  "t147": "メイン表示とカメラ映像を入れ替える",
+  "t148": "ドラッグで膀胱を回転、丸い窓をタップするとカメラの視点に切り替わります。膀胱は3D解剖モデルですが、ロボットはイラストです。先端は回転できる一つの平面内で曲がり、各セクションの曲率は電歪ポリマーと同じく電圧の2乗に比例して大きくなります。",
+  "t149": "ロボットの先端が入った3Dの膀胱。カメラが見た壁は青くなり、丸い窓にカメラの映像が表示されます。",
+  "t150": "膀胱の全体",
+  "t151": "3Dの膀胱を読み込み中…",
+  "t152": "先端の各セクションは電気活性フィルムの帯です。電圧をかけると曲がり、先端を回転させて3つを組み合わせると、カメラはほぼどこでも見られます。カメラが一度見た壁は青く変わります。"
  }
 };
   var LANGS = ["en", "fr", "ar", "ja"];

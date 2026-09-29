@@ -1,10 +1,12 @@
 /* "Steer the tip yourself": a planar sketch of the robot's steerable tip inside the bladder.
    Each section bends with constant curvature proportional to the square of its voltage
    (electrostrictive behaviour). The camera cone paints the parts of the wall it has seen.
-   Illustrative only — not a model of the real robot. */
-(function () {
+   Illustrative only — not a model of the real robot.
+   This is the fallback for browsers without WebGL; steer3d.js calls window.steer2D() when it can't draw in 3D. */
+window.steer2D = function () {
   var root = document.getElementById("steer");
-  if (!root) return;
+  if (!root || root.getAttribute("data-steer") === "2d") return;
+  root.setAttribute("data-steer", "2d");
 
   var NS = "http://www.w3.org/2000/svg";
   var svg = root.querySelector(".steer-svg");
@@ -202,4 +204,4 @@
   });
 
   render();
-})();
+};
