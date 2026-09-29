@@ -16,6 +16,7 @@
 <script defer="" src="assets/i18n.js"></script>
 <script defer="" src="assets/script.js"></script>
 <script defer="" src="assets/steer.js"></script>
+<script defer="" src="assets/steer3d.js"></script>
 <script defer="" src="assets/chain.js"></script>
 <title data-i18n="t114">Imane Ferradj — Continuum Robotics</title>
 <meta content="Imane Ferradj — Continuum Robotics" property="og:title"/>
@@ -116,12 +117,14 @@
 <div class="steer">
 <div class="steer-copy">
 <h3 data-i18n="t119" id="steer-title">Steer the tip yourself.</h3>
-<p data-i18n="t120">Each section of the tip is a strip of electroactive film. Give a section some voltage and it curves; combine three and the camera can look almost anywhere. The wall turns blue wherever the camera has already looked.</p>
+<p class="only-3d" data-i18n="t152">Each section of the tip is a strip of electroactive film. Give a section some voltage and it curves; turn the tip and combine the three sections, and the camera can look almost anywhere. The wall turns blue wherever the camera has already looked.</p>
+<p class="only-2d" data-i18n="t120">Each section of the tip is a strip of electroactive film. Give a section some voltage and it curves; combine three and the camera can look almost anywhere. The wall turns blue wherever the camera has already looked.</p>
 <div class="steer-controls">
-<label class="steer-row"><span data-i18n="t121">Insertion</span><input dir="ltr" max="100" min="0" name="ins" type="range" value="45"/></label>
-<label class="steer-row"><span data-i18n="t122">Section 1</span><input dir="ltr" max="100" min="-100" name="s1" type="range" value="75"/></label>
-<label class="steer-row"><span data-i18n="t123">Section 2</span><input dir="ltr" max="100" min="-100" name="s2" type="range" value="-85"/></label>
-<label class="steer-row"><span data-i18n="t124">Section 3</span><input dir="ltr" max="100" min="-100" name="s3" type="range" value="95"/></label>
+<label class="steer-row"><span data-i18n="t121">Insertion</span><input dir="ltr" max="100" min="0" name="ins" type="range" value="35"/></label>
+<label class="steer-row only-3d"><span data-i18n="t145">Rotation</span><input dir="ltr" max="180" min="-180" name="rot" type="range" value="-60"/></label>
+<label class="steer-row"><span data-i18n="t122">Section 1</span><input dir="ltr" max="100" min="-100" name="s1" type="range" value="80"/></label>
+<label class="steer-row"><span data-i18n="t123">Section 2</span><input dir="ltr" max="100" min="-100" name="s2" type="range" value="40"/></label>
+<label class="steer-row"><span data-i18n="t124">Section 3</span><input dir="ltr" max="100" min="-100" name="s3" type="range" value="-10"/></label>
 </div>
 <div class="steer-bar">
 <p aria-live="polite" class="steer-score"><span class="num" dir="ltr"><b>0</b><span class="pct">%</span></span> <span data-i18n="t128">of the wall seen</span></p>
@@ -132,8 +135,13 @@
 </div>
 </div>
 <figure class="steer-stage">
+<div class="steer-view">
 <svg aria-label="The robot's tip inside the bladder. A cone shows what the camera sees, and the parts of the wall it has already seen are highlighted." class="steer-svg" data-i18n-alt="t130" role="img" viewBox="60 50 480 510"></svg>
-<figcaption data-i18n="t129">A sketch, not a model of the real robot: here the tip moves in a plane, and each section's curvature grows with the square of its voltage, as it does for electrostrictive polymers.</figcaption>
+<canvas aria-label="A 3D bladder with the robot's tip inside. The parts of the wall the camera has seen turn blue, and a round window shows what the camera sees." class="steer-canvas" data-i18n-alt="t149" role="img" tabindex="0"></canvas>
+<button aria-label="Swap the main view and the camera view" aria-pressed="false" class="steer-inset" data-i18n-alt="t147" type="button"><span class="steer-inset-label"><span class="when-out" data-i18n="t146">Camera view</span><span class="when-cam" data-i18n="t150">Bladder view</span></span></button>
+<p class="steer-loading" data-i18n="t151">Loading the 3D bladder…</p>
+</div>
+<figcaption><span class="only-3d" data-i18n="t148">Drag to turn the bladder, or tap the round window to look through the camera. The bladder is a 3D anatomical model; the robot is a sketch: its tip bends in one plane that you can rotate, and each section's curvature grows with the square of its voltage, as it does for electrostrictive polymers.</span><span class="only-2d" data-i18n="t129">A sketch, not a model of the real robot: here the tip moves in a plane, and each section's curvature grows with the square of its voltage, as it does for electrostrictive polymers.</span></figcaption>
 </figure>
 </div>
 </section>
