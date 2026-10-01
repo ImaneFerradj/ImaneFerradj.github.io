@@ -274,7 +274,7 @@ html:lang(ja) body{font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu G
 html:lang(ja) h1,html:lang(ja) h2,html:lang(ja) h3,html:lang(ja) .profile-section>.section-tag,html:lang(ja) .pub-group-title .section-tag{font-family:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",var(--serif);line-height:1.35;word-break:auto-phrase;overflow-wrap:anywhere}
 html:lang(ar) p,html:lang(ar) li,html:lang(ja) p,html:lang(ja) li{line-height:1.85}
 html:lang(ja) .hero-copy h1{font-size:clamp(32px,3.6vw,52px)}
-html:lang(ja) .section-head h2,html:lang(ja) .papers h2,html:lang(ja) .subhero h1{font-size:clamp(28px,3.2vw,44px)}
+html:lang(ja) .gallery-feature h2,html:lang(ja) .section-head h2,html:lang(ja) .papers h2,html:lang(ja) .subhero h1{font-size:clamp(28px,3.2vw,44px)}
 html:lang(ja) .steer-copy h3{font-size:clamp(22px,2vw,28px)}
 html:lang(ja) .next h2{font-size:clamp(34px,4.4vw,64px)}
 html:lang(ar) .hero-copy h1{font-size:clamp(38px,4.2vw,62px)}
@@ -283,6 +283,46 @@ html:lang(ar) .paper-list h3,html:lang(ar) .pub-card h2{font-family:var(--sans)}
 [dir=rtl] .link-card strong{transform:scaleX(-1)}
 
 /* ---------- Responsive ---------- */
+
+/* ---------- Home hero illustration ---------- */
+.hero-figure{margin:0;justify-self:center;width:100%;max-width:540px;background:var(--white);border-radius:34px;padding:clamp(14px,2vw,22px);box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.92)}
+.hero-figure img{display:block;width:100%;height:auto}
+
+/* ---------- Navigation: current page, footer links ---------- */
+.nav-links a[aria-current=page]{color:var(--volt)}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+
+/* ---------- Gallery ---------- */
+.gallery-feature{max-width:var(--max);margin:auto;padding:0 28px clamp(40px,5vw,70px);display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.gallery-feature .cover{justify-self:start}
+.gallery-feature h2{margin:0;font-size:clamp(34px,3.8vw,52px);line-height:1.06}
+.gallery-feature p{margin:18px 0 0;max-width:420px;color:var(--muted);font-size:clamp(17px,1.5vw,20px);line-height:1.55}
+.gallery-thesis{padding-bottom:clamp(70px,9vw,120px)}
+.gallery-grid{list-style:none;margin:clamp(32px,4vw,52px) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:clamp(28px,3vw,40px) clamp(20px,2.4vw,30px)}
+.shot-link{display:block;color:inherit;border-radius:24px}
+.shot-frame{display:block;position:relative;aspect-ratio:4/3;background:var(--white);border-radius:22px;border:1px solid rgba(0,0,0,.05);box-shadow:0 30px 80px -44px rgba(40,90,130,.4);transition:border-color .2s ease}
+.shot-frame img{position:absolute;inset:16px;width:calc(100% - 32px);height:calc(100% - 32px);object-fit:contain}
+.shot-link:hover .shot-frame{border-color:rgba(27,108,224,.45)}
+.shot-link:focus-visible{outline:2px solid var(--volt);outline-offset:4px}
+.shot h3{margin:16px 2px 0;font-size:19px;line-height:1.25}
+.shot p{margin:6px 2px 0;color:var(--muted);font-size:14.5px;line-height:1.5}
+
+/* lightbox */
+.lightbox{width:min(1100px,94vw);max-height:94vh;padding:0;border:0;border-radius:26px;background:var(--white);color:var(--text);box-shadow:0 40px 120px rgba(20,40,60,.35)}
+.lightbox::backdrop{background:rgba(14,28,40,.62)}
+.lightbox-inner{display:flex;flex-direction:column;max-height:94vh}
+.lightbox-stage{flex:1;min-height:0;display:grid;place-items:center;padding:clamp(16px,3vw,32px) clamp(16px,3vw,32px) 0}
+.lightbox-stage img{display:block;max-width:100%;max-height:calc(94vh - 150px);width:auto;height:auto;object-fit:contain}
+.lightbox-bar{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;padding:18px clamp(18px,3vw,32px) 22px}
+.lightbox-text h2{margin:0;font-size:22px;line-height:1.2}
+.lightbox-text p{margin:6px 0 0;max-width:620px;color:var(--muted);font-size:15px;line-height:1.5}
+.lightbox-buttons{display:flex;gap:8px;flex-shrink:0}
+.lightbox-buttons button{width:44px;height:44px;border-radius:50%;border:1px solid rgba(27,108,224,.3);background:#fff;color:var(--volt-deep);font:inherit;font-size:19px;line-height:1;cursor:pointer}
+.lightbox-buttons button:hover{background:var(--paper-hi)}
+.lightbox-buttons button:focus-visible{outline:2px solid var(--volt);outline-offset:2px}
+[dir=rtl] .lightbox-prev span,[dir=rtl] .lightbox-next span{display:inline-block;transform:scaleX(-1)}
+.lightbox-open{overflow:hidden}
+
 @media (max-width:1060px){
   .chain-panel{grid-template-columns:1fr;align-items:start;align-content:start}
   .chain-fig{order:-1;max-width:520px;align-self:start}
@@ -292,6 +332,8 @@ html:lang(ar) .paper-list h3,html:lang(ar) .pub-card h2{font-family:var(--sans)}
   .split-head{align-items:start}
   .profile-index{display:none}
   .goal .steer{grid-template-columns:1fr}
+  .gallery-feature{grid-template-columns:1fr}
+  .hero-figure{max-width:480px}
   .steer-stage{order:-1;max-width:420px}
 }
 @media (max-width:700px){
@@ -304,6 +346,9 @@ html:lang(ar) .paper-list h3,html:lang(ar) .pub-card h2{font-family:var(--sans)}
   .hero,.section,.subhero,.summary-panel,.profile-layout,.pub-page,.next-inner{padding-left:18px;padding-right:18px}
   .hero{padding-top:56px}.split-hero{min-height:auto}
   .portrait{max-width:340px}
+  .gallery-feature{padding-left:18px;padding-right:18px}
+  .lightbox-bar{flex-direction:column;align-items:stretch}
+  .lightbox-buttons{justify-content:flex-end}
   .chain-label{font-size:12px}
   .chain-ring{width:38px;height:38px;font-size:17px}
   .chain-track::before,.chain-track::after{top:18px}
