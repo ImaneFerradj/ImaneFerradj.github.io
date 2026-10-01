@@ -1,9 +1,0 @@
-# Keep this site's pictures out of Google Images.
-# The pages themselves stay searchable; the pictures only show on the site.
-User-agent: Googlebot-Image
-Disallow: /
-
-User-agent: *
-Allow: /
-
-Sitemap: https://imaneferradj.github.io/sitemap.xml
